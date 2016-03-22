@@ -1,7 +1,7 @@
-exe: plant.o zombie.o main.o guisantes.o patata.o tiraagua.o znormal.o zarmadura.o
-	g++ plant.o zombie.o main.o guisantes.o patata.o tiraagua.o znormal.o zarmadura.o -o exe
+exe: plant.o zombie.o main.o guisantes.o patata.o tiraagua.o znormal.o zarmadura.o ztirafuego.o
+	g++ plant.o zombie.o main.o guisantes.o patata.o tiraagua.o znormal.o zarmadura.o ztirafuego.o -o exe
 
-main.o: main.cpp plant.h zombie.h guisantes.h patata.h znormal.h zarmadura.o
+main.o: main.cpp plant.h zombie.h guisantes.h patata.h znormal.h zarmadura.h ztirafuego.h
 	g++ -c main.cpp
 
 plant.o: plant.cpp plant.h
@@ -24,3 +24,6 @@ znormal.o: znormal.cpp zombie.h znormal.h
 
 zarmadura.o: zarmadura.cpp zombie.h zarmadura.h
 	g++ -c zarmadura.cpp
+
+ztirafuego.o: ztirafuego.cpp zombie.h ztirafuego.h
+	g++ -c ztirafuego.cpp
