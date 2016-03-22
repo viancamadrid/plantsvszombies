@@ -1,7 +1,7 @@
-exe: plant.o zombie.o main.o guisantes.o
-	g++ plant.o zombie.o main.o guisantes.o -o exe
+exe: plant.o zombie.o main.o guisantes.o patata.o
+	g++ plant.o zombie.o main.o guisantes.o patata.o -o exe
 
-main.o: main.cpp plant.h zombie.h
+main.o: main.cpp plant.h zombie.h guisantes.h patata.h
 	g++ -c main.cpp
 
 plant.o: plant.cpp plant.h
@@ -12,3 +12,6 @@ zombie.o: zombie.cpp zombie.h
 
 guisantes.o: guisantes.cpp plant.h guisantes.h
 	g++ -c guisantes.cpp
+
+patata.o: patata.cpp plant.h patata.h
+	g++ -c patata.cpp
