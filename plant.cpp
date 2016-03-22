@@ -6,7 +6,7 @@ using std::string;
 using std::stringstream;
 
 //constructor
-Plant::Plant(string tipo, int ataque, int defensa):tipo(tipo),ataque(ataque),defensa(defensa){}
+Plant::Plant(string tipo):tipo(tipo){}
 
 //destructor
 Plant::~Plant(){}

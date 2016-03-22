@@ -6,7 +6,7 @@ using std::string;
 using std::stringstream;
 
 //constructor
-Zombie::Zombie(string tipo, int ataque, int defensa):tipo(tipo),ataque(ataque),defensa(defensa){}
+Zombie::Zombie(string tipo):tipo(tipo){}
 
 //destructor
 Zombie::~Zombie(){}
