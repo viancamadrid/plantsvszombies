@@ -27,3 +27,6 @@ zarmadura.o: zarmadura.cpp zombie.h zarmadura.h
 
 ztirafuego.o: ztirafuego.cpp zombie.h ztirafuego.h
 	g++ -c ztirafuego.cpp
+
+clear:
+	rm *.o
